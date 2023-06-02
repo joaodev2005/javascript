@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando Nacionalidade</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/6030/6030844.png" type="image/x-icon">
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            Digite sua Nacionalidade: <input type="text" name="cxpais" id="cxpais">
+            <input type="button" value="verificar" id="verificado" onclick="verificar()">
+            <div id="resul">
+
+            </div>
+        </section>
+    </main>
+    <script>
+       function verificar() {
+        var res = window.document.getElementById('resul')
+        var caixa = window.document.getElementById('cxpais')
+        var pais = 'Brasil'
+
+        if (pais.value == 'Brasil') {
+            res.innerHTML = 'BR'
+        }else {
+            (pais.value)
+            res.innerHTML = 'de fora'
+        }
+       }
+    </script>
+</body>
+</html>
