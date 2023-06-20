@@ -16,6 +16,11 @@ header {
     text-align: center;
 }
 
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 section {
     background-color: white;
     border-radius: 10px;
@@ -30,7 +35,16 @@ section {
 }
 
 footer {
+    padding-top: 10px;
     color: white;
     text-align: center;
     font-style: italic;
+}
+
+#dados > p {
+    padding-bottom: 10px;
+}
+
+#res {
+    text-align: center;
 }
