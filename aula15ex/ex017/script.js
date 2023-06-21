@@ -1,4 +1,25 @@
 function tabuada() {
+    let num = document.getElementById('txtn')
+    let tab = document.getElementById('seltab')
+    if (num.value.length == 0){
+        window.alert('[ERRO] Digite um numero')
+    } else {
+        tab.innerHTML = ''
+        let n = Number(num.value)
+        let c = 1
+        while (c <= 10) {
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
+            c++
+        }
+    }
+    
+}
+
+
+/*function tabuada() {
     var tabu = document.getElementById('txtn')
     var sele = document.getElementById('seltab')
     var t = Number(txtn.value)
@@ -14,23 +35,4 @@ function tabuada() {
             sele.add(option)
         }
     } 
-}
-
-
-/*function tabuada() {
-    var inputNumber = document.getElementById('txtn')
-    var selectNumber = document.getElementById('seltab')
-    var i = Number(txtn.value)
-
-    if (inputNumber.value.length == 0) {
-        window.alert('[ERRO] Escolha uma tabuada para prosseguir')
-    } else {
-        selectNumber.innerHTML = ""
-
-        for (var c = 1; c <= 10; c++) {
-            var option = document.createElement("option")
-            option.text = i + "x" + c + "=" (i * c)
-            selectNumber.add(option)
-        }
-    }
 }*/
