@@ -1,16 +1,16 @@
 //FUNCTION COM RETORNO
 
-function canal() {
-    let n1 = 30
-    let n2 = 5
-    let res = n1 - n2
-    if ( res % 2== 0 ) {
-        return 'Par'
-    }else {
-        return 'Impar'
+function soma() {
+    let n1 = 3
+    let n2 = 2
+    let res = n1 * n2
+    if( res % 2 == 0 ) {
+        return 'PAR'
+    } else {
+        return 'IMPAR'
     }
 }
 
-let res = canal()
+let res = soma()
 
 console.log(res)
