@@ -4,7 +4,7 @@ const divTodas = [...document.getElementsByTagName('div')]
 const cursosTodos = [...document.getElementsByClassName('curso')]
 const cursosC1 = [...document.getElementsByClassName('c1')]
 const cursosC2 = [...document.getElementsByClassName('c2')]
-const cursoEspecial = document.getElementById('c1')
+const cursoEspecial = document.getElementById('c14')
 
 // const querry_divTodas = [...document.querySelectorAll('div[class]')]
 const querry_divTodas = [...document.querySelectorAll('div > p')]
@@ -14,7 +14,9 @@ const querry_cursosC2 = [...document.querySelectorAll('.c2,p')]
 const querry_cursoEspecial = document.querySelector('#c1')
 
 
-console.log(querry_divTodas)
+
+
+console.log(cursoEspecial)
 // console.log(querry_cursosC2)
 
 // console.log(divTodas)
