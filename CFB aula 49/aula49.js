@@ -4,11 +4,11 @@ const p_array = document.querySelector('#array')
 const btnVerificar = document.querySelector('#btnverificar')
 const resultado = document.querySelector('#resultado')
 
-const elementos_array = [9, 84, 1233, 94, 58, 333, 23, 133, 1633]
+const elementos_array = [16,12,10,17,15,13,11,9,4,5,20]
 p_array.innerHTML = elementos_array
 
 btnVerificar.addEventListener('click', (evt) => {
-    const ret = elementos_array.every((el, i) => {
+    const ret = elementos_array.some((el, i) => {
         if(el < 18){
             resultado.innerHTML = `Array não conforme na Posição: ${i}`
         }
@@ -17,5 +17,4 @@ btnVerificar.addEventListener('click', (evt) => {
     if(ret){
         resultado.innerHTML = 'OK'
     }
-    // console.log(ret)
 })
