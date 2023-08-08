@@ -2,7 +2,7 @@
 
 const caixa = document.getElementById('caixa')
 
-let cores = ['azul', 'rosa', 'vermelho', 'dourado', 'roxo',['claro','forte','medio']]
+let cores = ['azul', 'rosa', 'vermelho', 'dourado', 'roxo',['claro','forte',]]
 let games = ['Undertale', 'Earthbound', 'The last Of Us', cores]
 
 // games.push('GTA V')
@@ -12,7 +12,7 @@ let games = ['Undertale', 'Earthbound', 'The last Of Us', cores]
 // games.unshift('Fear and Hunger')
 // games.shift()
 
-console.log(games[3][5][2])
+console.log(games[3][5][1])
 
 games.map((el) => {
     let p = document.createElement('p')
