@@ -44,12 +44,12 @@ article h1 {
     -o-border-radius: 4px;
 }
 
-.operators ul {
+.operators  {
     display: flex;
     gap: 2rem;
 }
 
-.operators ul li {
+.operators button {
     cursor: pointer;
     background-color: rgb(227, 223, 223);
     border: 1px solid black;
